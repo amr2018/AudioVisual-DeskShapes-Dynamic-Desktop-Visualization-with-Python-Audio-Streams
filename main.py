@@ -38,8 +38,8 @@ def draw_shapes(data):
     angle = 0
     color = random.choice(colors)
     for i in range(lines_len):
-        start_x = 400
-        start_y = 300
+        start_x = root.winfo_width() / 2
+        start_y = root.winfo_height() / 2
         audio_level = np.max(data) - np.min(data)
         #print(audio_level)
         rad = math.radians(angle + (lines_len / 360) * i )
